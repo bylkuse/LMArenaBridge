@@ -142,7 +142,7 @@ def read_root():
 if __name__ == "__main__":
     import uvicorn
     logger.info("🚀 文件床服务器正在启动...")
-    logger.info("   - 监听地址: http://127.0.0.1:5180")
-    logger.info(f"   - 上传端点: http://127.0.0.1:5180/upload")
+    logger.info("   - 监听地址: http://127.0.0.1:10000")
+    logger.info(f"   - 上传端点: http://127.0.0.1:10000/upload")
     logger.info(f"   - 文件访问路径: /uploads")
-    uvicorn.run(app, host="0.0.0.0", port=5180)
+    uvicorn.run(app, host="0.0.0.0", port=10000)
